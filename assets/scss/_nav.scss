@@ -1,0 +1,241 @@
+/*--------------------------------------------------------------
+# navbar
+--------------------------------------------------------------*/
+
+.navbar-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	transition: all 0.3s ease-out 0s;
+
+
+	.navbar-nav {
+		@media only screen and (max-width: 991px) {
+		 align-items: center;
+		}
+	}
+}
+
+.nav-center {
+	/** Large devices (desktops, 992px and up) **/
+	@media (min-width: 992px) {
+		position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	}
+}
+
+.sticky {
+	position: fixed;
+	z-index: 99;
+	transition: all 0.3s ease-out 0s;
+	background-color: darken($color: $main-color, $amount: 10%);
+
+	.navbar {
+
+
+		.navbar-toggler .toggler-icon {
+			background: #000;
+		}
+	}
+
+}
+
+
+
+.navbar {
+	padding: 0;
+	border-radius: 5px;
+	position: relative;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	padding: 12px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar {
+		padding: 8px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		padding: 8px 0;
+	}
+}
+
+.navbar-brand {
+	padding: 0;
+  color: #fff;
+  font-size: 55px;
+  line-height: 1;
+  text-shadow:
+  0 1px 0px #000000,
+  1px 0 0px #111,
+  1px 2px 1px #000000,
+  2px 1px 1px #111,
+  2px 3px 2px #000000,
+  3px 2px 2px #111,
+  3px 4px 2px #000000,
+  4px 3px 3px #111,
+  4px 5px 3px #000000,
+  5px 4px 2px #111;
+
+	img {
+		height: 21px;
+    @media only screen and (max-width: 767px) {
+     height: 18px;
+    }
+	}
+  &:hover{
+    color: #fff;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    &:hover{
+      color: $main-color;
+    }
+  }
+  @media only screen and (max-width: 1299px) {
+   font-size: 42px;
+  }
+  @media only screen and (max-width: 991px) {
+   font-size: 38px;
+  }
+  @media only screen and (max-width: 767px) {
+   font-size: 32px;
+  }
+}
+
+.navbar-toggler {
+	padding: 0;
+
+	&:focus {
+		outline: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.toggler-icon {
+		width: 30px;
+		height: 4px;
+    border-radius: 10px;
+		background: #000;
+		display: block;
+		margin: 5px 0;
+		position: relative;
+		transition: all 0.3s ease-out 0s;
+	}
+
+	&.active .toggler-icon {
+		&:nth-of-type(1) {
+			transform: rotate(45deg);
+			top: 10px;
+		}
+
+		&:nth-of-type(2) {
+			opacity: 0;
+		}
+
+		&:nth-of-type(3) {
+			-webkit-transform: rotate(135deg);
+			-ms-transform: rotate(135deg);
+			transform: rotate(135deg);
+			top: -7px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-collapse {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: darken($color: $main-color, $amount: 15%);
+		z-index: 9;
+		padding: 15px 22px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: darken($color: $main-color, $amount: 15%);
+		z-index: 9;
+		padding: 12px 20px;
+	}
+}
+
+.navbar-nav .nav-item {
+	position: relative;
+  &:not(:last-child) {
+  margin-right: 15px;
+  @media only screen and (max-width: 991px) {
+   margin-right: 0;
+  }
+  }
+	a {
+		font-size: 15px;
+		color: $text-color;
+		transition: all 0.3s ease-out 0s;
+		padding: 10px 0;
+		position: relative;
+		@media only screen and (max-width: 991px) {
+			color: #fff;
+		}
+		&:hover,
+		&.active {
+			color: purple;
+		}
+		img {
+			height: 36px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav .nav-item a {
+		display: inline-block;
+		padding: 6px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-nav .nav-item a {
+		display: inline-block;
+		padding: 6px 0;
+	}
+}
+
+.social {
+	li {
+
+		@media only screen and (max-width: 991px) {
+			margin-right: 0;
+			padding-left: 0px;
+		}
+    a{
+      border: 0;
+      text-decoration: none;
+    }
+
+
+    img{
+      height: 36px;
+    }
+    @media only screen and (max-width: 991px) {
+     display: none;
+    }
+
+	}
+}

@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+# mint-sec
+--------------------------------------------------------------*/
+
+.mint-sec {
+	padding-top: 160px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 100px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding-top: 70px;
+  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .mint-box{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    h2{
+      font-size: 30px;
+      text-shadow:
+      0 1px 0px #000000,
+      1px 0 0px #111,
+      1px 2px 1px #000000,
+      2px 1px 1px #111,
+      2px 3px 2px #000000;
+      margin-bottom: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 26px;
+       margin-bottom: 12px;
+      }
+    }
+  }
+  .btn-cons{
+    display: flex;
+    align-items: center;
+    .btn-counter{
+      border: 3px solid #000;
+      min-width: 80px;
+      height: 42px;
+      background-color: #4aecfb;
+      border-radius: 7px;
+      color: #fff;
+      font-size: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-shadow:
+      0 1px 0px #000000,
+      1px 0 0px #111,
+      1px 2px 1px #000000;
+       box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.6);
+       transition: all .2s ease-in;
+       &:hover{
+        background-color: #39c2cf;
+        color: #fff;
+       }
+    }
+    .counter-value{
+      border: 3px solid #000;
+      background-color: #fff;
+      height: 42px;
+      border-radius: 7px;
+      margin: 0px 8px;
+      text-align: center;
+      color: #000;
+      font-size: 19px;
+      box-shadow: none;
+    }
+  }
+  .btn-mint{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    border: 3px solid #000;
+    background-color: #4d8ffe;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 16px;
+    text-shadow:
+    0 1px 0px #000000,
+    1px 0 0px #111,
+    1px 2px 1px #000000;
+    box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.6);
+    transition: all .2s ease-in;
+    &:hover{
+      background-color: #3a74d7;
+      color: #fff;
+    }
+  }
+
+
+  .img-btm{
+    margin-top: auto;
+    @media only screen and (max-width: 1399px) {
+     margin-top: unset;
+     margin-top: 20px;
+    }
+    @media only screen and (max-width: 991px) {
+     display: none;
+    }
+
+
+
+  }
+  .fir-mobile{
+    text-align: center;
+    margin-top: 18px;
+    @media  (min-width: 992px) {
+      display: none;
+      margin-top: 0;
+    }
+  }
+}
+
+.fir-mobile{
+  display: none;
+  @media only screen and (max-width: 991px) {
+   display: block;
+   text-align: center;
+   margin-bottom: 12px;
+   a{
+    border: 0;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    img{
+      height: 46px;
+      @media only screen and (max-width: 767px) {
+       height: 36px;
+      }
+    }
+   }
+  }
+}

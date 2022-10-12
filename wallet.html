@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title> Pumples - Wallet </title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css?v=275" />
+</head>
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <div class="top-logo">
+      <div class="container">
+        <div class="page-logo">
+          <a href="password.html">p</a>um<a href="">p</a>les
+        </div><!-- /.page-logo -->
+      </div><!-- /.container -->
+    </div><!-- /.top-logo -->
+
+  <section class="password-sec">
+    <div class="container">
+
+      <div class="frm-boss mt-4">
+        <h2> <span>🏆</span>VIP list CHECK </h2>
+        <div class="pass-1">
+          <form id="vip-form" method="POST">
+            <div class="form-grp mb-4">
+              <input type="text" class="form-control vip" id="VIP" placeholder="Enter Wallet Address">
+              <div class="invalid-feedback vipError"></div>
+            </div><!-- /.form-grp -->
+            <button class="btn-submit-2"  type="submit"> Check Whitelist </button>
+          </form>
+        </div><!-- /.pass-1 -->
+
+        <div class="alrt-suc" id="resultvS">  </div><!-- /.alrt-suc -->
+        <div class="alrt-er" id="resultvE"> </div><!-- /.alrt-er -->
+
+       </div><!-- /.frm-boss -->
+
+     <div class="frm-boss mt-4">
+      <h2> <span>🏆</span>Whitelist CHECK </h2>
+      <div class="pass-1">
+        <form id="white-form" method="POST">
+          <div class="form-grp mb-4">
+            <input type="text" class="form-control white" id="WHITE" placeholder="Enter Wallet Address">
+            <div class="invalid-feedback whiteError"></div>
+          </div><!-- /.form-grp -->
+          <button class="btn-submit-1"  type="submit"> Check Whitelist </button>
+        </form>
+      </div><!-- /.pass-1 -->
+
+      <div class="alrt-suc" id="resultwS">  </div><!-- /.alrt-suc -->
+      <div class="alrt-er" id="resultwE"> </div><!-- /.alrt-er -->
+
+     </div><!-- /.frm-boss -->
+
+
+
+    </div><!-- /.container -->
+  </section><!-- /.password-sec -->
+
+
+
+  <!-- ======= ajax loading ======= -->
+  <div id="loader-ajax" class="loading-ajax hidden">Loading&#8230;</div>
+  <!-- ======= ajax loading end ======= -->
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/password.js?v=1"></script>
+
+
+
+
+</body>
+
+
+</html>

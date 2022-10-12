@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# base
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: "Bodo Amat";
+	src: url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.eot"); /* IE9*/
+	src: url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.woff2")
+			format("woff2"),
+		/* chrome、firefox */
+			url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.woff") format("woff"),
+		/* chrome、firefox */
+			url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.ttf")
+			format("truetype"),
+		/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+			url("../fonts/ec8cc45eb89be9f0fb3d9ac672b8a7f2.svg#Bodo Amat")
+			format("svg"); /* iOS 4.1- */
+}
+
+body {
+	font-family: "Bodo Amat";
+	font-style: normal;
+	color: $text-color;
+	background-color: $main-color;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.container {
+	// max-width: 1050px;
+}
+
+a {
+	&:hover {
+		color: $main-color;
+	}
+
+	-webkit-transition: all 0.3s ease-out 0s;
+
+	-o-transition: all 0.3s ease-out 0s;
+
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+i,
+span,
+a {
+	display: inline-block;
+}
+
+audio,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: $title-color;
+	font-weight: normal;
+}
+p {
+	margin: 0;
+}
+section {
+	overflow: hidden;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+.error {
+	color: #ff4500;
+}
+
+.success {
+	color: green;
+}
+
+.center-text {
+	h3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 1;
+		@media only screen and (max-width: 1299px) {
+			font-size: 42px;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 40px;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 35px;
+		}
+	}
+}
