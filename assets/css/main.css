@@ -530,7 +530,7 @@ h6 a {
 }
 @media only screen and (max-width: 767px) {
   .password-sec {
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 .password-sec .form-control {
@@ -653,12 +653,12 @@ footer p {
 # pass-1
 --------------------------------------------------------------*/
 .pass-1 {
-  max-width: 500px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #373737;
+  background-color: #21ff98;
   padding: 34px 30px;
 }
 @media only screen and (max-width: 767px) {
@@ -672,30 +672,46 @@ footer p {
 }
 
 .frm-boss h2 {
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
+  text-shadow: 0 1px 0px #000000, 1px 0 0px #111, 1px 2px 1px #000000;
 }
 .frm-boss h2 span {
   font-size: 30px;
 }
+@media only screen and (max-width: 767px) {
+  .frm-boss h2 span {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .frm-boss h2 {
+    font-size: 27px;
+  }
+}
 
 .btn-submit-1, .btn-submit-2 {
-  background-color: #44ff2f;
-  color: #A0FFD3;
+  text-decoration: none;
   display: block;
   width: 100%;
+  border: 3px solid #000;
+  background-color: #4d8ffe;
+  color: #fff;
+  font-size: 20px;
   text-align: center;
-  border: 0;
-  border-radius: 6px;
-  padding: 9px 15px 13px 15px;
-  font-size: 30px;
+  height: 50px;
+  border-radius: 7px;
+  margin-top: 16px;
+  text-shadow: 0 1px 0px #000000, 1px 0 0px #111, 1px 2px 1px #000000;
+  -webkit-box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.6);
+          box-shadow: 0 0.1625rem 0.25rem 0 rgba(36, 39, 46, 0.6);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 .btn-submit-1:hover, .btn-submit-2:hover {
-  background-color: #15be02;
-  color: #A0FFD3;
+  background-color: #3a74d7;
+  color: #fff;
 }
 
 /* Absolute Center Spinner ajax */
